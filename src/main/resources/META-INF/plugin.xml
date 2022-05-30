@@ -22,6 +22,11 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="com.example.startup.PluginStartUpActivity"/>
+
+        <applicationConfigurable instance="com.example.config.CommonPersistentConfig"/>
+        <applicationService serviceImplementation="com.example.config.CommonPersistentEntity"
+                            serviceInterface="com.example.config.CommonPersistentEntity"/>
+
     </extensions>
     <actions>
         <action id="A0001" class="com.example.a0001.action.A0001Action" text="第一功能">
