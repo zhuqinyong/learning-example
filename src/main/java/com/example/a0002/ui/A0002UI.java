@@ -17,9 +17,7 @@ public class A0002UI extends JFrame {
         exampleTable.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
-                if (e.isControlDown() && e.getKeyChar()== KeyEvent.VK_R) {
-
-                }
+                System.out.println(" ");
             }
         });
     }
