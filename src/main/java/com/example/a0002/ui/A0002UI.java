@@ -9,6 +9,10 @@ public class A0002UI extends JFrame {
     private JTable exampleTable;
 
 
+    public JPanel getRoot() {
+        return root;
+    }
+
     public A0002UI() {
         exampleTable.addKeyListener(new KeyAdapter() {
             @Override
